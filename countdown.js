@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
-// Set the target date and time
-const targetDate = new Date("2025-05-19T00:00:00").getTime();
-=======
+
 // Time & Date
 const targetDate = new Date("2025-05-19T13:10:00Z").getTime();
-
->>>>>>> Stashed changes
-
 function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
@@ -33,6 +27,3 @@ function updateCountdown() {
 
 // Update the countdown every second
 const timer = setInterval(updateCountdown, 1000);
-
-// Initialize the countdown immediately
-updateCountdown();
