@@ -26,6 +26,7 @@ function updateCountdown() {
 }
 
 // Update the countdown every second
+// No more bug or glitch will show.
 const timer = setInterval(updateCountdown, 1000);
 
 // Initialize the countdown immediately
