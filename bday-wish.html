@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="styles.css">
-<script src="scripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
+<script src="scripts.js" defer></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +23,12 @@
 <div class="container">
     <h1>Happy Birthday Mushfica!</h1>
     <p>Wishing you a day filled with love, joy, and all your favorite things. You deserve the very best!</p>
-    <button onclick="alert('Your wish has been made!')">Make a Wish!</button>
+    <button id="music" onclick="toggleMusic()">Play Birthday Song!</button>
+    <audio id="backgroundMusic" loop>
+        <source src="library/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
 </div>
 </body>
 </html>
